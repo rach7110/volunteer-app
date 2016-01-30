@@ -1,0 +1,78 @@
+ /*background-color: #c2dde5; light blue*/
+        /*background-color: #bcc8db;  light purple*/
+        /*background-color: #BDCCDD;  light blue-purple */
+
+        /*background-color: #e76630;  orange*/
+        /*background-color: #3b54ac;  blue*/
+        /*background-color: #EBEBEB;  light gray*/
+
+
+   /*     html, body {
+            height: 100%;
+        }*/
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-weight: 100;
+            font-family: 'Lato';
+        }
+
+        .container div {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+
+        .navbar{
+            background-color: #BDCCDD; /* light blue-purple */
+        }
+
+        #name {
+            font-size: 25px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .font-1 {
+            font-family: "Courier New", Courier;
+        }
+
+        .navbar-right {
+            font-size: 1.2em;   
+        }
+
+        #banner, #get-started, #summary{
+            text-align: center;
+        }
+
+        #banner .title {
+            font-size: 72px;
+        }
+
+        #banner .logo {
+            padding-top: 15px;
+        }
+
+        #get-started .btn{
+            color: white;
+
+        /*background-color: #bcc8db;  /*light purple*/
+
+        /*background-color: #BDCCDD;  /*light blue-purple */
+
+
+            /*background-color: #e76630;  /*orange*/
+        background-color: #3b54ac;  /*blue*/
+        }
+
+        #summary h4 {
+            font-size: 1.2em;
+        }
+
+        #summary p{
+            font-size: 1.25em;
+            max-width: 500px;
+            margin: 0 auto;
+        }
