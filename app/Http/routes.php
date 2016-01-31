@@ -12,7 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
 });
 
 // Route::resource('volunteer-event') {}
@@ -29,5 +28,11 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    
+	Route::(get('/', function() {
+    	return view('welcome');
+	}));
+
+	Route::resource('event', 'EventController')
+
 });
