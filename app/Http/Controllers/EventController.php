@@ -9,6 +9,11 @@ use App\Http\Controllers\Controller;
 
 class EventController extends Controller
 {
+    // Require an authenticated user for all actions on this controller:
+    public function __contruct() 
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
