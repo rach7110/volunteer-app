@@ -37,7 +37,7 @@
                     <span class="icon-bar"></span> 
                 </button>
                 <!-- PERSONAL NAME/BRAND -->
-                <a class="navbar-brand" id="name" href="">Volunteasy</a>
+                <a class="navbar-brand" id="name" href="/">Volunteasy</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

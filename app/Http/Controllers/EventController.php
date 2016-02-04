@@ -21,7 +21,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        //
+        return view('events.index');
     }
 
     /**
@@ -31,7 +31,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        //
+        return view('events.create');
     }
 
     /**
@@ -42,7 +42,9 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title' => 'required'
+        ]);
     }
 
     /**
