@@ -4,6 +4,7 @@
 
 @section('content')
 
-    <!-- TODO: Current Tasks -->
+    <!-- TODO: List Events -->
+    <h3>Here are your events:</h3>
 
 @endsection

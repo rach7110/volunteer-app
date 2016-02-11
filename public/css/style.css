@@ -42,8 +42,17 @@
         .navbar-right {
             font-size: 1.2em;   
         }
+/*
+        .center-block {
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-        #banner, #get-started, #summary{
+        #new-event .center-block {
+            width: 50%;
+        }*/
+
+        .center-contents, #banner, #get-started, #summary{
             text-align: center;
         }
 

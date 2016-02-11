@@ -45,6 +45,10 @@ class EventController extends Controller
         $this->validate($request, [
             'title' => 'required'
         ]);
+
+        // TODO: STORE NEW EVENT TO DATABASE
+
+        return view('events.index');
     }
 
     /**
