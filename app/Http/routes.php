@@ -31,6 +31,6 @@ Route::group(['middleware' => ['web']], function () {
 	});
 
 
-	Route::resource('event', 'EventController');
+	Route::resource('volunteerevent', 'VolunteerEventController');
 
 });

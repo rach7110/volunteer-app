@@ -2,6 +2,7 @@
 
 namespace App;
 
+
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
@@ -26,7 +27,7 @@ class User extends Authenticatable
 
     public funtion events() 
     {
-        return $this->hasMany(Events::class);
+        return $this->hasMany(VolunteerEvent::class);
     }
 
 }

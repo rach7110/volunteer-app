@@ -4,7 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Event extends Model
+class VolunteerEvent extends Model
 {
-    //
+        public function user()
+    {
+    	return $this->belongsTo(User::class);
+    }
 }

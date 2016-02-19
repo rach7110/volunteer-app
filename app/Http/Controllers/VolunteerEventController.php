@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class EventController extends Controller
+class VolunteerEventController extends Controller
 {
     // Require an authenticated user for all actions on this controller:
     public function __contruct() 
@@ -21,7 +21,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        return view('events.index');
+        return view('volunteerevents.index');
     }
 
     /**
@@ -31,7 +31,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        return view('events.create');
+        return view('volunteerevents.create');
     }
 
     /**
@@ -48,7 +48,7 @@ class EventController extends Controller
 
         // TODO: STORE NEW EVENT TO DATABASE
 
-        return view('events.index');
+        return view('volunteerevents.index');
     }
 
     /**

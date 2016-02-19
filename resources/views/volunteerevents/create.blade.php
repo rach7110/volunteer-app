@@ -17,7 +17,7 @@
     </div>
 
     <!-- New Event Form -->
-    <form action="{{ url('event') }}" method="POST" class="form-horizontal">
+    <form action="{{ url('volunteerevent') }}" method="POST" class="form-horizontal">
         {!! csrf_field() !!}
 
         <!-- EVENT NAME-->

@@ -6,5 +6,8 @@
 
     <!-- TODO: List Events -->
     <h3>Here are your events:</h3>
+    <pre>
+    {{ $volunteerevents }}
+    </pre>
 
 @endsection
