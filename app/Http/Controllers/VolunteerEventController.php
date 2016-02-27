@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\VolunteerEvent;
+
+use Input;
+use Redirect;
 
 class VolunteerEventController extends Controller
 {
@@ -21,7 +25,11 @@ class VolunteerEventController extends Controller
      */
     public function index()
     {
-        return view('volunteerevents.index');
+        $volunteer_events = VolunteerEvent::all();
+
+        return view('volunteerevents.index', [
+            'volunteer_events' => $volunteer_events
+        ]);
     }
 
     /**
@@ -48,7 +56,12 @@ class VolunteerEventController extends Controller
 
         // TODO: STORE NEW EVENT TO DATABASE
 
-        return view('volunteerevents.index');
+        $volunteer_event = VolunteerEvent::create(
+            [
+            'title' => Input::get('title')
+
+            ]);
+        return Redirect::route('volunteerevent.index');
     }
 
     /**
