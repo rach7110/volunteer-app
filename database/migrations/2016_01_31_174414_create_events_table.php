@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVolunteerEventsTable extends Migration
+class CreateEventsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,15 +15,15 @@ class CreateVolunteerEventsTable extends Migration
         Schema::create('volunteerevents', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('description');
-            $table->string('start_date');
-            $table->string('end_date');
-            $table->string('location');
-            $table->string('street_address');
-            $table->string('city');
-            $table->string('state');
-            $table->string('zip');
-            $table->string('country');
+            $table->string('description')->nullable();
+            $table->string('start_date')->nullable();
+            $table->string('end_date')->nullable();
+            $table->string('location')->nullable();
+            $table->string('street_address')->nullable();
+            $table->string('city')->nullable();
+            $table->string('state')->nullable();
+            $table->string('zip')->nullable();
+            $table->string('country')->nullable();
             $table->timestamps();
         });
     }
@@ -35,7 +35,7 @@ class CreateVolunteerEventsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('events');
+        Schema::drop('volunteerevents');
     
     }
 }
