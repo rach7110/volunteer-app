@@ -52,7 +52,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="font-1 nav navbar-nav navbar-right">
-                    <li><a href="">Menu </a></li>
+                    <li><a href="{{route('volunteerevent.index') }} ">My Events </a></li>
                     <li><a href="">Menu</a></li>
                     <li><a href="">Menu</a></li>
                 </ul>
