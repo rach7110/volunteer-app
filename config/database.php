@@ -26,11 +26,11 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'sqlite'),
 
     /*
     |--------------------------------------------------------------------------
-    | Database Connections
+    | sqlite Connections
     |--------------------------------------------------------------------------
     |
     | Here are each of the database connections setup for your application.
