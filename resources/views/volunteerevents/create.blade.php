@@ -115,12 +115,17 @@
 
         <!-- BUTTON: SAVE-->
         <div class="form-group">
-            <div class="col-sm-offset-3 col-sm-6">
+            <div class="col-sm-offset-3 col-sm-2">
                 <button type="submit" class="btn btn-primary">
-                    <i class="fa fa-plus"></i> Add Event
+                    Add Event
                 </button>
             </div>
+            <!-- BUTTON: CANCEL -->
+            <div class='cancel' >
+                <a href=" {{route('volunteerevent.index')}}">Cancel</a>
+            </div>
         </div>
+
     </form>
 
 </div>

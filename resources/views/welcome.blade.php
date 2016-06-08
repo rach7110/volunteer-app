@@ -14,7 +14,7 @@
                 </div>
             </div>
 
-            <div class="row" id="get-started">
+            <div class="row" id="btn-get-started">
                 <a class='btn btn-lg' href=" {{route('volunteerevent.create')}}">Get Started</a>
             </div>
 
