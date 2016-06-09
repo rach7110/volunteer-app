@@ -54,13 +54,20 @@ class VolunteerEventController extends Controller
             'title' => 'required'
         ]);
 
-        // TODO: STORE NEW EVENT TO DATABASE
-
         $volunteer_event = VolunteerEvent::create(
             [
-            'title' => Input::get('title')
+            'title' => Input::get('title'),
+            'description' => Input::get('description'),
+            'start_date' => Input::get('start_date'),
+            'end_date' => Input::get('end_date'),
+            'location' => Input::get('location'),
+            'street_address' => Input::get('street_address'),
+            'city' => Input::get('city'),
+            'state' => Input::get('state'),
+            'zip' => Input::get('zip'),
+            'country' => Input::get('country')
+        ]);
 
-            ]);
         return Redirect::route('volunteerevent.index');
     }
 
